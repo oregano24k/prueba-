@@ -40,6 +40,70 @@
             left: 0;
             right: 0;
             bottom: 0;
+            background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente */
+            z-index: 1;
+        }
+        
+        .card-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen p-4">
+
+    <!-- Contenedores principales -->
+    <main class="card-container w-full max-w-xs rounded-3xl shadow-2xl overflow-hidden">
+        <div class="card-content flex flex-col items-center p-6 sm:p-8 text-center">
+            
+            <!-- Imagen de Perfil -->
+            <img 
+                src="https://images.unsplash.com/photo-1589156280159-276928395f93?q=80&w=1887&auto=format&fit=crop" 
+                alt="Foto de perfil de Antonio Rodriguez" 
+                class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg -mt-16"
+                onerror="this.onerror=null;this.src='https://placehold.co/100x100/3b82f6/ffffff?text=AR';"
+            >
+            
+            <!-- Información del Perfil -->
+            <h1 class="text-2xl font-bold mt-4 text-gray-800">Antonio Rodriguez</h1>
+            <p class="text-sm text-gray-600 mt-1">Gerente de Informática</p>
+            
+            <!-- Contenedores de Botones de Enlace -->
+            <div class="w-full mt-8 space-y-4">
+                <a href="https://www.jsdriver.net" class="block w-full bg-blue-600 text-white font-semibold py-3 px-5 rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-700">
+                    Página Web
+                </a>
+                <a href="https://apps.apple.com/do/app/jsdriver-driver/id6714450497" class="block w-full bg-blue-600 text-white font-semibold py-3 px-5 rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-700">
+                    JSDriver Conductores
+                </a>
+                <a href="#" class="block w-full bg-blue-600 text-white font-semibold py-3 px-5 rounded-full shadow-md transition-transform transform hover:scale-105 hover:bg-blue-700">
+                    Retiros de Bienestar
+                </a>
+            </div>
+            
+            <!-- Contenedores de Iconos de Redes Sociales -->
+            <div class="flex items-center gap-4 mt-8">
+                <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-md transition-transform transform hover:scale-110 hover:bg-blue-700">
+                    <i class="ph ph-pinterest-logo text-2xl"></i>
+                </a>
+                 <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-md transition-transform transform hover:scale-110 hover:bg-blue-700">
+                    <i class="ph ph-currency-dollar text-2xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-md transition-transform transform hover:scale-110 hover:bg-blue-700">
+                    <i class="ph ph-instagram-logo text-2xl"></i>
+                </a>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-color: rgba(107, 74, 53, 0.85); /* Tono marrón semi-transparente */
             z-index: 1;
         }
